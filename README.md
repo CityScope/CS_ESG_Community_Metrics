@@ -8,3 +8,31 @@ The 15-minute communities for each block-group are computed in a pre-processing 
 - Identify the block-groups which are within 1200m straight line distance
 - Of this subset, get the walking distance on the network to each block_group using the OSRM routing API. 
 The results are saved as a json file where the keys are block-group IDs and the values are lists of accessible block-groups.
+
+
+
+## Repository Structure
+
+```
+data-sources/
+	shapefiles/
+	# other public data files used
+scripts/
+	# scripts to compute walkable block groups,  etc
+	# input  to the scripts is in datafiles
+	# outputs to the scripts  is in outputs
+outputs/
+	walkable_bg/
+		bg_to_walkable_bg_osrm_{state FIPs}.json
+	bikeable_bg/
+		bg_to_bikeable_bg_osrm_{state FIPs}.json
+	
+notebooks/
+	# contains notebooks that use  datafiles and outputs of scripts
+
+# Later for the interface and its API (not yet included)
+
+interface/
+	frontend/
+	api/
+```
