@@ -1,0 +1,3 @@
+[submodule "notebooks/OpenCity"]
+	path = notebooks/OpenCity
+	url = https://github.com/doorleyr/OpenCity.git
