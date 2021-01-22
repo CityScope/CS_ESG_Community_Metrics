@@ -1,1 +1,5 @@
 env
+*-checkpoint.ipynb
+outputs/metrics/
+*.html
+data/
