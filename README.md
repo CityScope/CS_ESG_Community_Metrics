@@ -14,25 +14,18 @@ The results are saved as a json file where the keys are block-group IDs and the 
 ## Repository Structure
 
 ```
-data-sources/
+data/
 	shapefiles/
 	# other public data files used
 scripts/
-	# scripts to compute walkable block groups,  etc
-	# input  to the scripts is in datafiles
-	# outputs to the scripts  is in outputs
+	# inputs to the scripts are in datafiles
+	# outputs to the scripts  are in outputs
 outputs/
-	walkable_bg/
-		bg_to_walkable_bg_osrm_{state FIPs}.json
-	bikeable_bg/
-		bg_to_bikeable_bg_osrm_{state FIPs}.json
-	
+	<state_fips>/
+		metrics<state_fips>/
+		...	
 notebooks/
-	# contains notebooks that use  datafiles and outputs of scripts
+	# notebooks which perform analysis
 
-# Later for the interface and its API (not yet included)
-
-interface/
-	frontend/
-	api/
+index.html # kepler.gl prototype front-end
 ```
