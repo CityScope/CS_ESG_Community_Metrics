@@ -1,7 +1,8 @@
 env
 *-checkpoint.ipynb
-outputs/metrics/
-*.html
+*outputs/
 data/
 *metrics_*
 *dev.ipynb
+*cache/
+*logs/
